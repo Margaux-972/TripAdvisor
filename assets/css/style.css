@@ -110,6 +110,13 @@ header button {
 header button:hover {
   background-color: #4c4c4c;
 }
+
+header .container > i {
+  display: none;
+}
+header .container > div {
+  display: none;
+}
 /* ------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------
@@ -142,7 +149,7 @@ h1 span {
   flex: 1;
   padding: 15px;
   display: flex;
-  border-radius: 20px;
+  border-radius: 15px;
   cursor: pointer;
   justify-content: space-between;
 }
@@ -535,5 +542,37 @@ footer a {
   .menu div:nth-child(3),
   .menu div:nth-child(4) {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .removed {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+  header .container > i {
+    display: flex;
+  }
+  header .container > div {
+    display: flex;
+  }
+  header img {
+    width: 132px;
+  }
+  .menu {
+    overflow-x: scroll;
+    scrollbar-width: none;
+    flex-wrap: nowrap;
+  }
+  .menu div:not(:last-child) {
+    margin-right: 20px;
+  }
+  .menu div {
+    height: 60px;
   }
 }
