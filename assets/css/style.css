@@ -518,11 +518,14 @@ footer a {
   .menu div {
     flex-grow: 0;
     /* height: auto; */
-    flex-basis: calc((100% / 4) - 20px); /* ou calc((100% - 30px) / 4)*/
+    flex-basis: calc((100% - 60px) / 4); /* ou calc((100% - 30px) / 4)*/
     flex-shrink: 0;
   }
   .menu .hidden {
     display: flex;
+  }
+  .menu div:not(:last-child) {
+    margin-right: 0px;
   }
   .menu div:not(:nth-child(4n)) {
     margin-right: 20px;
