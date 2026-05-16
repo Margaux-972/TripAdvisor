@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/fonts.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" type="image/png" href="./assets/img/icon-trip.svg" />
     <script
       src="https://kit.fontawesome.com/1efb2dac05.js"
       crossorigin="anonymous"
@@ -545,14 +546,14 @@
       // Fermer la modal (croix)
       closeBtn.addEventListener("click", () => {
         modal.classList.add("hidden");
-        document.body.classList.remove("no-scroll");
+        document.body.classList.remove("disable");
       });
 
       // Fermer en cliquant en dehors
       modal.addEventListener("click", (event) => {
         if (event.target === modal) {
           modal.classList.add("hidden");
-          document.body.classList.remove("no-scroll");
+          document.body.classList.remove("disable");
         }
       });
 
